@@ -2,18 +2,13 @@ const { Sequelize } = require('sequelize');
 const UserModel = require("./models/user.model");
 const TokenModel = require("./models/token.model");
 
-// const config = {
-//     host: process.env.DATABASE_HOST || 'localhost',
-//     database: process.env.DATABASE_NAME || 'test',
-//     username: process.env.DATABASE_USERNAME || 'test',
-//     password: process.env.DATABASE_PASSWORD || 'test',
-// };
 const config = {
     host: process.env.DATABASE_HOST || 'localhost',
     database: process.env.DATABASE_NAME || 'test',
-    username: process.env.DATABASE_USERNAME || 'medmo',
-    password: process.env.DATABASE_PASSWORD || 'Cgdnd3Mtd2l6EA',
+    username: process.env.DATABASE_USERNAME || 'test',
+    password: process.env.DATABASE_PASSWORD || 'test',
 };
+
 
 const sequelize = new Sequelize(config.database, config.username, config.password, {
     host: config.host,
